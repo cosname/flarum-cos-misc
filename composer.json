@@ -2,7 +2,10 @@
     "name": "cosname/flarum-cos-misc",
     "description": "Miscellaneous customizations for COS Flarum.",
     "type": "flarum-extension",
-    "keywords": ["misc", "customization"],
+    "keywords": [
+        "misc",
+        "customization"
+    ],
     "license": "MIT",
     "authors": [
         {
