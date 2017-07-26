@@ -32,6 +32,9 @@ class AddMiscAssets
                 __DIR__.'/../../js/forum/dist/extension.js'
             ]);
 
+            // Self-hosted fonts
+            $event->view->addHeadString('<link rel="stylesheet" href="//uploads.cosx.org/static/css/open-sans.css">', 'font');
+
             $event->addBootstrapper('cosname/misc/main');
         }
     }
