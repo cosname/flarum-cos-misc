@@ -23,8 +23,8 @@ class CheckEmailDomain
     {
         // https://discuss.flarum.org/d/4238-how-to-add-custom-validate-for-post
         if ($event->type instanceof UserValidator) {
-            $event->validator->mergeRules('email', [
-                'regex:/.*(?<!qq\\.com)$/i'
+            $event->validator->addRules([
+                'email' => 'regex:/.*(?<!qq\\.com)$/i'
             ]);
             $event->validator->setCustomMessages([
                 'email.regex' => '请避免使用 QQ 邮箱',
