@@ -1,6 +1,7 @@
 <?php
 
 use Flarum\Extend;
+use Flarum\Frontend\Document;
 use Cosname\Listener;
 use Illuminate\Contracts\Events\Dispatcher;
 
