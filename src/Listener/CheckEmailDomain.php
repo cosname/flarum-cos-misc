@@ -2,8 +2,8 @@
 
 namespace Cosname\Listener;
 
-use Flarum\Event\ConfigureValidator;
-use Flarum\Core\Validator\UserValidator;
+use Flarum\Foundation\Event\Validating;
+use Flarum\User\UserValidator;
 use Illuminate\Contracts\Events\Dispatcher;
 
 class CheckEmailDomain
@@ -13,13 +13,13 @@ class CheckEmailDomain
      */
     public function subscribe(Dispatcher $events)
     {
-        $events->listen(ConfigureValidator::class, [$this, 'checkEmailDomain']);
+        $events->listen(Validating::class, [$this, 'checkEmailDomain']);
     }
 
     /**
-     * @param ConfigureValidator $event
+     * @param Validating $event
      */
-    public function checkEmailDomain(ConfigureValidator $event)
+    public function checkEmailDomain(Validating $event)
     {
         // https://discuss.flarum.org/d/4238-how-to-add-custom-validate-for-post
         if ($event->type instanceof UserValidator) {
@@ -27,7 +27,7 @@ class CheckEmailDomain
                 'regex:/.*(?<!qq\\.com)$/i'
             ]);
             $event->validator->setCustomMessages([
-                'email.regex' => '请避免使用QQ邮箱',
+                'email.regex' => '请避免使用 QQ 邮箱',
             ]);
         }
     }
