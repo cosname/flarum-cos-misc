@@ -13,9 +13,7 @@ return [
     // Add customized CSS
     (new Extend\Frontend('forum'))
         ->content(function (Document $document) {
-            $document->head = [
-                '<link rel="stylesheet" href="//uploads.cosx.org/static/css/open-sans.css">'
-            ];
+            $document->head[] = '<link rel="stylesheet" href="//uploads.cosx.org/static/css/open-sans.css">';
         }),
     
     // Add listener
