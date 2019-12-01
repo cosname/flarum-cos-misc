@@ -18,6 +18,7 @@ class CheckEmailDomain
         'oiizz.com',
         'dawin.com',
         'eveav.com',
+        'zzrgg.com',
         'juyouxi.com',
         'jnpayy.com',
         'moakt.ws',
