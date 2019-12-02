@@ -11,6 +11,7 @@ class CheckEmailDomain
     // Black list of email domains
     private static $blacklist = [
         'yxpf.xyz',
+        'mailt.top',
         'hotmali.cn',
         '263mali.cn',
         '120mail.com',
