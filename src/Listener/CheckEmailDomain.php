@@ -27,6 +27,7 @@ class CheckEmailDomain
         '119mail.com',
         'yopmail.com',
         'alivemail.ga',
+        'imail1.net',
         'topmail2.net',
         'mailt.net',
         'master-mail.net'
