@@ -26,6 +26,7 @@ class CheckEmailDomain
         'moakt.ws',
         '119mail.com',
         'yopmail.com',
+        'mail3tech.com',
         'alivemail.ga',
         'imail1.net',
         'topmail2.net',
