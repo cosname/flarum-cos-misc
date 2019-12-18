@@ -31,6 +31,7 @@ class CheckEmailDomain
         'alivemail.ga',
         'imail1.net',
         'topmail2.net',
+        'mail3plus.net',
         'mailt.net',
         'master-mail.net'
     ];
