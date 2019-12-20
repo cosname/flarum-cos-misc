@@ -17,6 +17,7 @@ class CheckEmailDomain
         'hotmali.cn',
         '263mali.cn',
         '120mail.com',
+        '4tmail.com',
         'tmail2.com',
         'huaweimali.cn',
         'oiizz.com',
