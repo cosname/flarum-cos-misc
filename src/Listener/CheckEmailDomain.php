@@ -32,6 +32,7 @@ class CheckEmailDomain
         'mail3tech.com',
         'alivemail.ga',
         'imail1.net',
+        'imail5.net',
         'topmail2.net',
         'mail3plus.net',
         'mailt.net',
