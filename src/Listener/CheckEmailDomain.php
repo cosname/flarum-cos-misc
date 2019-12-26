@@ -32,6 +32,7 @@ class CheckEmailDomain
         '119mail.com',
         'yopmail.com',
         'mail3tech.com',
+        'qmailshop.com',
         'alivemail.ga',
         'imail1.net',
         'imail5.net',
