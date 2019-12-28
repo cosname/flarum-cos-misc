@@ -21,6 +21,7 @@ class CheckEmailDomain
         '4tmail.com',
         '4qmail.com',
         'tmail2.com',
+        'wmail1.com',
         'huaweimali.cn',
         'ryo.shp7.cn',
         'oiizz.com',
