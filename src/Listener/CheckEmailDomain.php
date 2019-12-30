@@ -42,6 +42,7 @@ class CheckEmailDomain
         'topmail2.net',
         'mail3plus.net',
         'mailt.net',
+        'mtsg.me',
         'master-mail.net'
     ];
 
