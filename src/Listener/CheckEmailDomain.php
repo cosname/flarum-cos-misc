@@ -40,6 +40,7 @@ class CheckEmailDomain
         'imail1.net',
         'imail5.net',
         'topmail2.net',
+        'promail9.net',
         'mail3plus.net',
         'mailt.net',
         'mtsg.me',
