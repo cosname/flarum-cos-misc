@@ -18,6 +18,7 @@ class CheckEmailDomain
         'alivemail.ga',
         'dawin.com',
         'eveav.com',
+        'fxmail.ws',
         'hotmali.cn',
         'huaweimali.cn',
         'imail1.net',
