@@ -22,6 +22,7 @@ class CheckEmailDomain
         'huaweimali.cn',
         'imail1.net',
         'imail5.net',
+        'inwmail.net',
         'jnpayy.com',
         'juyouxi.com',
         'mail1web.org',
