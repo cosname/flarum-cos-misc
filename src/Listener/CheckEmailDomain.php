@@ -36,6 +36,7 @@ class CheckEmailDomain
         'moakt.ws',
         'mtsg.me',
         'oiizz.com',
+        'oncloud.ws',
         'promail9.net',
         'qmailshop.com',
         'ryo.shp7.cn',
