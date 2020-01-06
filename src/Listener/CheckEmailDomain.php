@@ -41,6 +41,7 @@ class CheckEmailDomain
         'promail9.net',
         'qmailshop.com',
         'ryo.shp7.cn',
+        'sammail.ws',
         'seo-mailer.com',
         'seomail.org',
         'tmail2.com',
