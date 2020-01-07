@@ -38,6 +38,7 @@ class CheckEmailDomain
         'mtsg.me',
         'oiizz.com',
         'oncloud.ws',
+        'onmail.top',
         'promail9.net',
         'qmailshop.com',
         'ryo.shp7.cn',
