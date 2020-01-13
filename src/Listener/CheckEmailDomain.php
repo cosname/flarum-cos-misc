@@ -48,6 +48,7 @@ class CheckEmailDomain
         'sammail.ws',
         'seo-mailer.com',
         'seomail.org',
+        'seomail.top',
         'tmail2.com',
         'tmailer.org',
         'topmail.ws',
