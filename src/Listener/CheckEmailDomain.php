@@ -17,6 +17,7 @@ class CheckEmailDomain
         '4qmail.com',
         '4tmail.com',
         'alivemail.ga',
+        'bcaoo.com',
         'clsn1.com',
         'dawin.com',
         'eveav.com',
