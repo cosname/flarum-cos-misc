@@ -27,6 +27,7 @@ class CheckEmailDomain
         'imail5.net',
         'inwmail.net',
         'jancloud.net',
+        'janmail.org',
         'jnpayy.com',
         'juyouxi.com',
         'mail1web.org',
