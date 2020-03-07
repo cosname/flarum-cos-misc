@@ -20,6 +20,7 @@ class CheckEmailDomain
         'bcaoo.com',
         'clsn1.com',
         'dawin.com',
+        'emailnube.com',
         'eveav.com',
         'fxmail.ws',
         'hotmali.cn',
