@@ -42,6 +42,7 @@ class CheckEmailDomain
         'master-mail.net',
         'moakt.ws',
         'mtsg.me',
+        'newe-mail.com',
         'oiizz.com',
         'oncloud.ws',
         'onmail.top',
