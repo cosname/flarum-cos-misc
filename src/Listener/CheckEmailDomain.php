@@ -36,6 +36,7 @@ class CheckEmailDomain
         'mail3plus.net',
         'mail3tech.com',
         'mailer9.net',
+        'mailernam.com',
         'mailon.ws',
         'mailt.net',
         'mailt.top',
