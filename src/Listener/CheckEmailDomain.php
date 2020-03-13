@@ -54,6 +54,7 @@ class CheckEmailDomain
         'seo-mailer.com',
         'seomail.org',
         'seomail.top',
+        'sweatmail.com',
         'tmail2.com',
         'tmailer.org',
         'topmail.ws',
