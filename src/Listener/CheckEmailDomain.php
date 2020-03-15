@@ -48,6 +48,7 @@ class CheckEmailDomain
         'oncloud.ws',
         'onmail.top',
         'promail9.net',
+        'provamail.com',
         'qmailshop.com',
         'ryo.shp7.cn',
         'sammail.ws',
