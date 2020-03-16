@@ -25,6 +25,7 @@ class CheckEmailDomain
         'fxmail.ws',
         'hotmali.cn',
         'huaweimali.cn',
+        'hxqmail.com',
         'imail1.net',
         'imail5.net',
         'inwmail.net',
