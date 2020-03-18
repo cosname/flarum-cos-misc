@@ -44,6 +44,7 @@ class CheckEmailDomain
         'mailt.top',
         'master-mail.net',
         'moakt.ws',
+        'mrisemail.com',
         'mtsg.me',
         'newe-mail.com',
         'oiizz.com',
