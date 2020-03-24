@@ -47,6 +47,7 @@ class CheckEmailDomain
         'moakt.ws',
         'mrisemail.com',
         'mtsg.me',
+        'ncsoft.top',
         'newe-mail.com',
         'oiizz.com',
         'oncloud.ws',
