@@ -43,6 +43,7 @@ class CheckEmailDomain
         'mailon.ws',
         'mailt.net',
         'mailt.top',
+        'mailvxin.com',
         'master-mail.net',
         'moakt.ws',
         'mrisemail.com',
