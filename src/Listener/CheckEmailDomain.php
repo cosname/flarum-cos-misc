@@ -40,6 +40,7 @@ class CheckEmailDomain
         'mailer9.net',
         'mailernam.com',
         'mailezee.com',
+        'maillak.com',
         'mailon.ws',
         'mailt.net',
         'mailt.top',
