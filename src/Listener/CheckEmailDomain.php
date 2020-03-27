@@ -69,6 +69,7 @@ class CheckEmailDomain
         'topmail2.net',
         'upcmaill.com',
         'wmail1.com',
+        'wwrmails.com',
         'x-netmail.com',
         'yopmail.com',
         'yxpf.xyz',
