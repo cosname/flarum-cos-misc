@@ -67,6 +67,7 @@ class CheckEmailDomain
         'tmailer.org',
         'topmail.ws',
         'topmail2.net',
+        'ualmail.com',
         'upcmaill.com',
         'wmail1.com',
         'wwrmails.com',
