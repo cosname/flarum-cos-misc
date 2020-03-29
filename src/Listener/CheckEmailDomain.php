@@ -30,6 +30,7 @@ class CheckEmailDomain
         'imail1.net',
         'imail5.net',
         'inwmail.net',
+        'ismailgul.net',
         'jancloud.net',
         'janmail.org',
         'jnpayy.com',
