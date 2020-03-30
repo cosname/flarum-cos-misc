@@ -22,6 +22,7 @@ class CheckEmailDomain
         'dawin.com',
         'emailnube.com',
         'eveav.com',
+        'fft-mail.com',
         'fxmail.ws',
         'hotmali.cn',
         'huaweimali.cn',
