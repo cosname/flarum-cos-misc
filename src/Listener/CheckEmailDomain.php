@@ -25,6 +25,7 @@ class CheckEmailDomain
         'eveav.com',
         'fft-mail.com',
         'fxmail.ws',
+        'gotkmail.com',
         'hotmali.cn',
         'huaweimali.cn',
         'huweimail.cn',
