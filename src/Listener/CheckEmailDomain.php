@@ -41,6 +41,7 @@ class CheckEmailDomain
         'mail1web.org',
         'mail3plus.net',
         'mail3tech.com',
+        'mailboxt.com',
         'mailer9.net',
         'mailernam.com',
         'mailezee.com',
