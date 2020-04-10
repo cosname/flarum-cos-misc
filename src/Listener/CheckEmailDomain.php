@@ -69,6 +69,7 @@ class CheckEmailDomain
         'seomail.org',
         'seomail.top',
         'smlmail.com',
+        'svpmail.com',
         'sweatmail.com',
         'tmail2.com',
         'tmailer.org',
