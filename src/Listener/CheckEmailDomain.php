@@ -57,6 +57,7 @@ class CheckEmailDomain
         'mtsg.me',
         'ncsoft.top',
         'newe-mail.com',
+        'officemalaga.com',
         'oiizz.com',
         'oncloud.ws',
         'onmail.top',
