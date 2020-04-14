@@ -13,6 +13,7 @@ class CheckEmailDomain
         '119mail.com',
         '120mail.com',
         '263mali.cn',
+        '2go-mail.com',
         '4533.top',
         '4qmail.com',
         '4tmail.com',
