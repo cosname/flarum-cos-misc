@@ -22,6 +22,7 @@ class CheckEmailDomain
         'chaichuang.com',
         'clsn1.com',
         'dawin.com',
+        'emailhost99.com',
         'emailnube.com',
         'eveav.com',
         'fft-mail.com',
