@@ -29,6 +29,7 @@ class CheckEmailDomain
         'fxmail.ws',
         'gotkmail.com',
         'govdep5012.com',
+        'homedepinst.com',
         'hotmali.cn',
         'huaweimali.cn',
         'huweimail.cn',
