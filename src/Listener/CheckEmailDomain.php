@@ -32,6 +32,7 @@ class CheckEmailDomain
         'homedepinst.com',
         'hotmali.cn',
         'huaweimali.cn',
+        'hubopss.com',
         'huweimail.cn',
         'hxqmail.com',
         'imail1.net',
