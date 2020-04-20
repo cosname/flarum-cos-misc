@@ -43,6 +43,7 @@ class CheckEmailDomain
         'janmail.org',
         'jnpayy.com',
         'juyouxi.com',
+        'lagsixtome.com',
         'mail1web.org',
         'mail3plus.net',
         'mail3tech.com',
