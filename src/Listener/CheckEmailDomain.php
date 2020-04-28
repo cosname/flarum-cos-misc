@@ -54,6 +54,7 @@ class CheckEmailDomain
         'maillak.com',
         'mailmyrss.com',
         'mailon.ws',
+        'mailop7.com',
         'mailt.net',
         'mailt.top',
         'mailvxin.com',
