@@ -82,6 +82,7 @@ class CheckEmailDomain
         'sweatmail.com',
         'tmail2.com',
         'tmailer.org',
+        'tmajre.com',
         'topmail.ws',
         'topmail2.net',
         'ualmail.com',
