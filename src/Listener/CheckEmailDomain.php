@@ -69,6 +69,7 @@ class CheckEmailDomain
         'oiizz.com',
         'oncloud.ws',
         'onmail.top',
+        'oriwijn.com',
         'promail9.net',
         'provamail.com',
         'qmailshop.com',
