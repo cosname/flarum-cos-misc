@@ -21,6 +21,7 @@ class CheckEmailDomain
         'bcaoo.com',
         'chaichuang.com',
         'clsn1.com',
+        'coalamails.com',
         'dawin.com',
         'emailhost99.com',
         'emailnube.com',
