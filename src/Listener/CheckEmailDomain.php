@@ -94,6 +94,7 @@ class CheckEmailDomain
         'x-netmail.com',
         'yopmail.com',
         'yxpf.xyz',
+        'zaelmo.com',
         'zzrgg.com'
     ];
 
