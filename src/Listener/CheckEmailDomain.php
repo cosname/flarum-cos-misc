@@ -38,6 +38,7 @@ class CheckEmailDomain
         'hxqmail.com',
         'imail1.net',
         'imail5.net',
+        'inbov03.com',
         'inwmail.net',
         'ismailgul.net',
         'jancloud.net',
