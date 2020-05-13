@@ -44,6 +44,7 @@ class CheckEmailDomain
         'jancloud.net',
         'janmail.org',
         'jnpayy.com',
+        'jupiterm.com',
         'juyouxi.com',
         'katamo1.com',
         'lagsixtome.com',
