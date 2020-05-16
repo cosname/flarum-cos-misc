@@ -8,107 +8,68 @@ use Illuminate\Contracts\Events\Dispatcher;
 
 class CheckEmailDomain
 {
-    // Black list of email domains
-    private static $blacklist = [
-        '119mail.com',
-        '120mail.com',
-        '263mali.cn',
-        '2go-mail.com',
-        '4533.top',
-        '4qmail.com',
-        '4tmail.com',
-        'alivemail.ga',
-        'bcaoo.com',
-        'chaichuang.com',
-        'clsn1.com',
-        'coalamails.com',
-        'dawin.com',
-        'emailhost99.com',
-        'emailnube.com',
-        'eveav.com',
-        'fft-mail.com',
-        'fxmail.ws',
-        'gotkmail.com',
-        'govdep5012.com',
-        'homedepinst.com',
-        'hotmali.cn',
-        'huaweimali.cn',
-        'hubopss.com',
-        'huweimail.cn',
-        'hxqmail.com',
-        'imail1.net',
-        'imail5.net',
-        'inbov03.com',
-        'inwmail.net',
-        'ismailgul.net',
-        'jancloud.net',
-        'janmail.org',
-        'jnpayy.com',
-        'jupiterm.com',
-        'juyouxi.com',
-        'katamo1.com',
-        'lagsixtome.com',
-        'mail1web.org',
-        'mail3plus.net',
-        'mail3tech.com',
-        'mailboxt.com',
-        'mailer9.net',
-        'mailernam.com',
-        'mailezee.com',
-        'maillak.com',
-        'mailmyrss.com',
-        'mailon.ws',
-        'mailop7.com',
-        'mailt.net',
-        'mailt.top',
-        'mailvxin.com',
-        'master-mail.net',
-        'moakt.ws',
-        'mrisemail.com',
-        'mtsg.me',
-        'ncsoft.top',
-        'newe-mail.com',
-        'officemalaga.com',
-        'oiizz.com',
-        'oncloud.ws',
-        'onmail.top',
-        'oriwijn.com',
-        'promail9.net',
-        'provamail.com',
-        'qmailshop.com',
-        'reqaxv.com',
-        'ryo.shp7.cn',
-        'sammail.ws',
-        'seo-mailer.com',
-        'seomail.org',
-        'seomail.top',
-        'smlmail.com',
-        'svpmail.com',
-        'sweatmail.com',
-        'tmail2.com',
-        'tmailer.org',
-        'tmajre.com',
-        'topmail.ws',
-        'topmail2.net',
-        'ualmail.com',
-        'upcmaill.com',
-        'wmail1.com',
-        'wwrmails.com',
-        'x-netmail.com',
-        'yopmail.com',
-        'yxpf.xyz',
-        'zaelmo.com',
-        'zzrgg.com'
+    // White list of email domains, obtained from existing users
+    private static $whitelist = [
+        '163.com',
+        'yahoo.com',
+        'gmail.com',
+        '126.com',
+        'hotmail.com',
+        'sina.com',
+        'yahoo.com.cn',
+        'outlook.com',
+        'sohu.com',
+        'yahoo.cn',
+        'tom.com',
+        'yeah.net',
+        'foxmail.com',
+        '21cn.com',
+        'msn.com',
+        'yandex.com',
+        'yahoo.com.tw',
+        'live.cn',
+        'yahoo.com.hk',
+        'sina.com.cn',
+        'sina.cn',
+        'eyou.com',
+        '139.com',
+        'aol.com',
+        'live.com',
+        'aliyun.com',
+        'mail.com',
+        'vip.sina.com',
+        '263.net',
+        'yahoo.co.uk',
+        'googlemail.com',
+        'yahoo.ca',
+        '189.cn',
+        'yahoo.co.jp',
+        'sogou.com',
+        'hotmail.fr',
+        'vip.163.com',
+        '163.net',
+        'etang.com',
+        'yahoo.com.au',
+        'msn.cn',
+        'hotmail.co.jp',
+        '163.com.cn',
+        '56.com',
+        'huawei.com',
+        'hotmail.co.uk',
+        'yahoo.fr',
+        'china.com.cn'
     ];
 
-    private function blacklist_regex()
+    private function whitelist_regex()
     {
         // Escape dot
-        $regex = str_replace('.', '\\.', self::$blacklist);
+        $regex = str_replace('.', '\\.', self::$whitelist);
         // Suffix
         $regex = preg_replace('/$/', '$', $regex);
         // Merge rules
         $regex = implode('|', $regex);
+        // Rules for edu emails: end with .edu or .edu.**
+        $regex = $regex . '|\\.edu$|\\.edu\\.[^.]*$';
         return $regex;
     }
 
@@ -127,17 +88,14 @@ class CheckEmailDomain
     {
         // https://discuss.flarum.org/d/4238-how-to-add-custom-validate-for-post
         if ($event->type instanceof UserValidator) {
-            // The 'regex' rule is used to detect QQ mails, associated with a warning message
-            // The 'not_regex' rule is used to prevent spams
+            // The 'regex' rule is used to prevent spams
             $event->validator->addRules([
                 'email' => [
-                    'regex:/.*(?<!qq\\.com)$/i',  // see https://stackoverflow.com/a/16398813
-                    'not_regex:/' . $this->blacklist_regex() . '/i'
+                    'regex:/' . $this->whitelist_regex() . '/i'
                 ]
             ]);
             $event->validator->setCustomMessages([
-                'email.regex' => '请避免使用 QQ 邮箱',
-                'email.not_regex' => '请证明你不是机器人！'
+                'email.regex' => '请使用常见邮箱注册（避免使用 QQ 邮箱），或到 https://github.com/cosname/flarum-cos-misc/issues 申请开启白名单。'
             ]);
         }
     }
