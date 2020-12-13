@@ -57,7 +57,8 @@ class CheckEmailDomain
         'huawei.com',
         'hotmail.co.uk',
         'yahoo.fr',
-        'china.com.cn'
+        'china.com.cn',
+        'ac.cn'
     ];
 
     private function whitelist_regex()
