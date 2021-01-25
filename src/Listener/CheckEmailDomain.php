@@ -58,7 +58,10 @@ class CheckEmailDomain
         'hotmail.co.uk',
         'yahoo.fr',
         'china.com.cn',
-        'ac.cn'
+        'ac.cn',
+        'protonmail.ch',
+        'protonmail.com',
+        'pm.me'
     ];
 
     private function whitelist_regex()
