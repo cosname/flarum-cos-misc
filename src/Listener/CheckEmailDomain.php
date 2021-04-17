@@ -2,10 +2,6 @@
 
 namespace Cosname\Listener;
 
-use Flarum\Foundation\Event\Validating;
-use Flarum\User\UserValidator;
-use Illuminate\Contracts\Events\Dispatcher;
-
 class CheckEmailDomain
 {
     // White list of email domains, obtained from existing users
@@ -78,30 +74,15 @@ class CheckEmailDomain
         return $regex;
     }
 
-    /**
-     * @param Dispatcher $events
-     */
-    public function subscribe(Dispatcher $events)
+    public function __invoke($flarumValidator, $validator)
     {
-        $events->listen(Validating::class, [$this, 'checkEmailDomain']);
-    }
-
-    /**
-     * @param Validating $event
-     */
-    public function checkEmailDomain(Validating $event)
-    {
-        // https://discuss.flarum.org/d/4238-how-to-add-custom-validate-for-post
-        if ($event->type instanceof UserValidator) {
-            // The 'regex' rule is used to prevent spams
-            $event->validator->addRules([
-                'email' => [
-                    'regex:/' . $this->whitelist_regex() . '/i'
-                ]
-            ]);
-            $event->validator->setCustomMessages([
-                'email.regex' => '请使用常见邮箱注册（避免使用 QQ 邮箱），或到 https://github.com/cosname/flarum-cos-misc/issues 申请开启白名单。'
-            ]);
-        }
+        $validator->addRules([
+            'email' => [
+                'regex:/' . $this->whitelist_regex() . '/i'
+            ]
+        ]);
+        $validator->setCustomMessages([
+            'email.regex' => '请使用常见邮箱注册（避免使用 QQ 邮箱），或到 https://github.com/cosname/flarum-cos-misc/issues 申请开启白名单。'
+        ]);
     }
 }
