@@ -6,6 +6,8 @@ class CheckEmailDomain
 {
     // White list of email domains, obtained from existing users
     private static $whitelist = [
+        'cos.name',
+        'cosx.org',
         '163.com',
         'yahoo.com',
         'gmail.com',
