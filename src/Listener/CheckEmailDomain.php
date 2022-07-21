@@ -60,7 +60,9 @@ class CheckEmailDomain
         'protonmail.ch',
         'protonmail.com',
         'pm.me',
-        'jointsurg.com'
+        'jointsurg.com',
+        'sinofine.me',
+        'neko.ist'
     ];
 
     private function whitelist_regex()
