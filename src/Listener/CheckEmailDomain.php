@@ -62,7 +62,8 @@ class CheckEmailDomain
         'pm.me',
         'jointsurg.com',
         'sinofine.me',
-        'neko.ist'
+        'neko.ist',
+        'wo.cn'
     ];
 
     private function whitelist_regex()
